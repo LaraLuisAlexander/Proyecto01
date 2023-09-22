@@ -92,12 +92,16 @@ cout<<"========================================================================\
 		*bm = a;
 	}
 }
+cout<<"\n=======================================================================\n";
 cout<<"\nLa laptop con mayor memoria es: "<<Laptop[*bM].modelo<<"\n\tEs de la marca: "<<Laptop[*bM].marca<<"\n\tTiene procesador: "<<Laptop[*bM].procesador<<"\n\tEs del año: "<<Laptop[*bM].anyo<<"\n\tTiene una memoria RAM de: "<<Laptop[*bM].memoria<<"GB";
-cout<<"\nLa laptop con menor memoria es: "<<Laptop[*bm].modelo<<"\n\tEs de la marca: "<<Laptop[*bm].marca<<"\n\tTiene procesador: "<<Laptop[*bm].procesador<<"\n\tEs del año: "<<Laptop[*bm].anyo<<"\n\tTiene una memoria RAM de: "<<Laptop[*bm].memoria<<"GB";
+cout<<"\nLa laptop con menor memoria es: "<<Laptop[*bm].modelo<<"\n\tEs de la marca: "<<Laptop[*bm].marca<<"\n\tTiene procesador: "<<Laptop[*bm].procesador<<"\n\tEs del año: "<<Laptop[*bm].anyo<<"\n\tTiene una memoria RAM de: "<<Laptop[*bm].memoria<<"GB\n";
+cout<<"\n========================================================================\n";
 cout<<"\nLa laptop con mayor cantidad en el almacen es: "<<Laptop[*bM].modelo<<"\n\tEs de la marca: "<<Laptop[*bM].marca<<"\n\tTiene procesador "<<Laptop[*bM].procesador<<"\n\tEs del año: "<<Laptop[*bM].anyo<<"\n\tCantidad en el almacen: "<<Laptop[*bM].cantidad;
-cout<<"\nLa laptop con menor cantidad en el almacen es: "<<Laptop[*bm].modelo<<"\n\tEs de la marca: "<<Laptop[*bm].marca<<"\n\tTiene procesador "<<Laptop[*bm].procesador<<"\n\tEs del año: "<<Laptop[*bm].anyo<<"\n\tCantidad en el almacen: "<<Laptop[*bm].cantidad;
+cout<<"\nLa laptop con menor cantidad en el almacen es: "<<Laptop[*bm].modelo<<"\n\tEs de la marca: "<<Laptop[*bm].marca<<"\n\tTiene procesador "<<Laptop[*bm].procesador<<"\n\tEs del año: "<<Laptop[*bm].anyo<<"\n\tCantidad en el almacen: "<<Laptop[*bm].cantidad<<"\n";
+cout<<"\n========================================================================\n";
 cout<<"\nLa laptop con mayor memoria en el disco duro es: "<<Laptop[*bM].modelo<<"\n\tEs de la marca: "<<Laptop[*bM].marca<<"\n\tTiene procesador: "<<Laptop[*bM].procesador<<"\n\tEs del año: "<<Laptop[*bM].anyo<<"\n\tTiene una memoria RAM de: "<<Laptop[*bM].disco<<"GB";
-cout<<"\nLa laptop con menor memoria es el disco duro es: "<<Laptop[*bm].modelo<<"\n\tEs de la marca: "<<Laptop[*bm].marca<<"\n\tTiene procesador: "<<Laptop[*bm].procesador<<"\n\tEs del año: "<<Laptop[*bm].anyo<<"\n\tTiene una memoria RAM de: "<<Laptop[*bm].disco<<"GB";
+cout<<"\nLa laptop con menor memoria es el disco duro es: "<<Laptop[*bm].modelo<<"\n\tEs de la marca: "<<Laptop[*bm].marca<<"\n\tTiene procesador: "<<Laptop[*bm].procesador<<"\n\tEs del año: "<<Laptop[*bm].anyo<<"\n\tTiene una memoria RAM de: "<<Laptop[*bm].disco<<"GB\n";
+cout<<"\n========================================================================\n";
 	delete[]Laptop;
 	delete n, bm, bM, cantidad, menor, mayor, memoria, disco;
 	return 0;
