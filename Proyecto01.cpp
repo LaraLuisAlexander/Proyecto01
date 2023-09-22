@@ -4,16 +4,28 @@
 using namespace std;
 
 struct laptop{
-	char modelo[25];
-	char marca[30];
-	int anyo;
-	char procesador[50];
-	int memoria;
-	int cantidad;
-	int disco;
+char modelo[25];
+char marca[30];
+int anyo;
+char procesador[50];
+int memoria;
+int cantidad;
+int disco;
 };
 
 int main(){
+setlocale(LC_ALL, "Spanish");
+int*n = new int;
+float *mayor = new float, *menor = new float;
+int *bM = new int, *bm = new int, *memoria = new int, *cantidad = new int, *disco = new int;
+*cantidad = 0;
+*memoria = 0;
+*disco = 0;
+cout<<"Cantidad de laptops a ingresar: ";
+cin>>*n;
+int const n1 =*n;
+laptop *Laptop = new laptop[n1];
+for(int a = 0; a<*n; a++){
 	setlocale(LC_ALL, "Spanish");
 	int*n = new int;
 	float *mayor = new float, *menor = new float;
@@ -94,7 +106,9 @@ cout<<"\nLa laptop con mayor cantidad en el almacen es: "<<Laptop[*bM].modelo<<"
 cout<<"\nLa laptop con menor cantidad en el almacen es: "<<Laptop[*bm].modelo<<"\n\tEs de la marca: "<<Laptop[*bm].marca<<"\n\tTiene procesador "<<Laptop[*bm].procesador<<"\n\tEs del año: "<<Laptop[*bm].anyo<<"\n\tCantidad en el almacen: "<<Laptop[*bm].cantidad;
 cout<<"\nLa laptop con mayor memoria en el disco duro es: "<<Laptop[*bM].modelo<<"\n\tEs de la marca: "<<Laptop[*bM].marca<<"\n\tTiene procesador: "<<Laptop[*bM].procesador<<"\n\tEs del año: "<<Laptop[*bM].anyo<<"\n\tTiene una memoria RAM de: "<<Laptop[*bM].disco<<"GB";
 cout<<"\nLa laptop con menor memoria es el disco duro es: "<<Laptop[*bm].modelo<<"\n\tEs de la marca: "<<Laptop[*bm].marca<<"\n\tTiene procesador: "<<Laptop[*bm].procesador<<"\n\tEs del año: "<<Laptop[*bm].anyo<<"\n\tTiene una memoria RAM de: "<<Laptop[*bm].disco<<"GB";
-	delete[]Laptop;
+delete[]Laptop;
+delete[]Laptop;
+
 	delete n, bm, bM, cantidad, menor, mayor, memoria, disco;
 	return 0;
 }
