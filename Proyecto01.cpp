@@ -21,7 +21,9 @@ int main(){
 	*cantidad = 0;
 	*memoria = 0;
 	*disco = 0;
-	cout<<"\n---------------------Tienda Next Technology---------------------------------------------";
+cout<<"========================================================================\n";
+cout<<"                          Tienda Next Technology                        \n";
+cout<<"========================================================================\n";
 	cout<<"\nCantidad de laptops a ingresar: ";
 	cin>>*n;
 	int const n1 =*n;
