@@ -26,6 +26,7 @@ cout<<"                          Tienda Next Technology                        \
 cout<<"========================================================================\n";
 	cout<<"\nCantidad de laptops a ingresar: ";
 	cin>>*n;
+cout<<"========================================================================\n";
 	int const n1 =*n;
 	laptop *Laptop = new laptop[n1];
 	for(int a = 0; a<*n; a++){
