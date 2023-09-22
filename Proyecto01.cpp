@@ -21,7 +21,8 @@ int main(){
 	*cantidad = 0;
 	*memoria = 0;
 	*disco = 0;
-	cout<<"Cantidad de laptops a ingresar: ";
+	cout<<"\n---------------------Tienda Next Technology---------------------------------------------";
+	cout<<"\nCantidad de laptops a ingresar: ";
 	cin>>*n;
 	int const n1 =*n;
 	laptop *Laptop = new laptop[n1];
